@@ -13,4 +13,4 @@ Create model:
 - Execute script create_model.py
 
 Run program:
-- Execute script classifier.py, You can specifya an image to be classified by setting img_path(8-th line in classifier.py)
+- Execute script classifier.py, You can specify an image to be classified by setting img_path(8-th line in classifier.py)
