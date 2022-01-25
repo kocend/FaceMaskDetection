@@ -5,9 +5,9 @@ Prerequisites:
 
 Install requirements:
 - In the root project directory open terminal and type in:
-  a.  py -m venv env
-  b.  .\env\Scripts\activate
-  c.  pip3 install -r requirements.txt
+  * py -m venv env
+  * .\env\Scripts\activate
+  * pip3 install -r requirements.txt
   
 Create model:
 - Execute script create_model.py
