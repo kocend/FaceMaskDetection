@@ -1,0 +1,28 @@
+C:\Projekty\Face_Mask_Detection\venv\Scripts\python.exe C:/Projekty/Face_Mask_Detection/create_model.py
+2022-01-26 19:34:36.185207: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2022-01-26 19:34:36.185466: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-01-26 19:34:40.798002: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'nvcuda.dll'; dlerror: nvcuda.dll not found
+2022-01-26 19:34:40.798232: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-01-26 19:34:40.802731: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: KONRAD_L
+2022-01-26 19:34:40.803015: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: KONRAD_L
+2022-01-26 19:34:40.803447: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+last layer output shape:  (None, 12, 12, 768)
+C:\Projekty\Face_Mask_Detection\venv\lib\site-packages\keras\optimizer_v2\rmsprop.py:130: UserWarning: The `lr` argument is deprecated, use `learning_rate` instead.
+  super(RMSprop, self).__init__(name, **kwargs)
+Found 2622 images belonging to 2 classes.
+Found 654 images belonging to 2 classes.
+Epoch 1/5
+10/12 [========================>.....] - ETA: 11s - loss: 1.5956 - accuracy: 0.7884C:\Projekty\Face_Mask_Detection\venv\lib\site-packages\PIL\Image.py:946: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  "Palette images with Transparency expressed in bytes should be "
+12/12 [==============================] - 86s 7s/step - loss: 1.3492 - accuracy: 0.8172 - val_loss: 0.1620 - val_accuracy: 0.9333
+Epoch 2/5
+12/12 [==============================] - 83s 7s/step - loss: 0.0940 - accuracy: 0.9621 - val_loss: 0.0385 - val_accuracy: 0.9833
+Epoch 3/5
+12/12 [==============================] - 83s 7s/step - loss: 0.1920 - accuracy: 0.9349 - val_loss: 0.0573 - val_accuracy: 0.9778
+Epoch 4/5
+12/12 [==============================] - 82s 7s/step - loss: 0.0648 - accuracy: 0.9779 - val_loss: 0.1303 - val_accuracy: 0.9500
+Epoch 5/5
+12/12 [==============================] - 89s 7s/step - loss: 0.1704 - accuracy: 0.9439 - val_loss: 0.0100 - val_accuracy: 1.0000
+
+Process finished with exit code 0

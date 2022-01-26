@@ -1,0 +1,28 @@
+C:\Projekty\Face_Mask_Detection\venv\Scripts\python.exe C:/Projekty/Face_Mask_Detection/create_model.py
+2022-01-26 20:16:50.679127: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2022-01-26 20:16:50.679384: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-01-26 20:16:55.369922: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'nvcuda.dll'; dlerror: nvcuda.dll not found
+2022-01-26 20:16:55.370165: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-01-26 20:16:55.375220: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: KONRAD_L
+2022-01-26 20:16:55.375723: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: KONRAD_L
+2022-01-26 20:16:55.376418: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+last layer output shape:  (None, 12, 12, 768)
+C:\Projekty\Face_Mask_Detection\venv\lib\site-packages\keras\optimizer_v2\rmsprop.py:130: UserWarning: The `lr` argument is deprecated, use `learning_rate` instead.
+  super(RMSprop, self).__init__(name, **kwargs)
+Found 2622 images belonging to 2 classes.
+Found 654 images belonging to 2 classes.
+Epoch 1/5
+12/12 [==============================] - 80s 6s/step - loss: 0.8762 - accuracy: 0.7865 - val_loss: 0.0747 - val_accuracy: 0.9778
+Epoch 2/5
+ 6/12 [==============>...............] - ETA: 32s - loss: 0.1249 - accuracy: 0.9453C:\Projekty\Face_Mask_Detection\venv\lib\site-packages\PIL\Image.py:946: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  "Palette images with Transparency expressed in bytes should be "
+12/12 [==============================] - 84s 7s/step - loss: 0.1138 - accuracy: 0.9583 - val_loss: 0.1149 - val_accuracy: 0.9556
+Epoch 3/5
+12/12 [==============================] - 84s 7s/step - loss: 0.1826 - accuracy: 0.9284 - val_loss: 0.0284 - val_accuracy: 0.9833
+Epoch 4/5
+12/12 [==============================] - 80s 7s/step - loss: 0.0588 - accuracy: 0.9753 - val_loss: 0.0609 - val_accuracy: 0.9778
+Epoch 5/5
+12/12 [==============================] - 80s 7s/step - loss: 0.0484 - accuracy: 0.9818 - val_loss: 0.0450 - val_accuracy: 0.9778
+
+Process finished with exit code 0
