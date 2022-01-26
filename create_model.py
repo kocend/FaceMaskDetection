@@ -37,7 +37,7 @@ path = os.path.join(path, 'dataset')
 path_train = os.path.join(path, 'Train')
 
 # declare test_path
-path_test = os.path.join(path, 'Test')
+# path_test = os.path.join(path, 'Test')
 
 
 
@@ -48,25 +48,28 @@ train_datagen = ImageDataGenerator(rescale=1.0/255,
                                    shear_range=0.2,
                                    zoom_range=0.2,
                                    horizontal_flip=True,
-                                   fill_mode='nearest')
+                                   fill_mode='nearest',
+                                   validation_split=0.2)
 
-test_datagen = ImageDataGenerator(rescale=1.0/255.)
+# test_datagen = ImageDataGenerator(rescale=1.0/255.)
 
 train_generator = train_datagen.flow_from_directory(path_train,
                                                     batch_size=64,
                                                     class_mode='binary',
-                                                    target_size=(224, 224))
+                                                    target_size=(224, 224),
+                                                    subset='training')
 
-validation_generator = test_datagen.flow_from_directory(path_test,
+validation_generator = train_datagen.flow_from_directory(path_train,
                                                         batch_size=20,
                                                         class_mode='binary',
-                                                        target_size=(224, 224))
+                                                        target_size=(224, 224),
+                                                        subset='validation')
 
 model.fit(train_generator,
           validation_data=validation_generator,
+          validation_steps=9,
           steps_per_epoch=12,
           epochs=5,
-          validation_steps=9,
           verbose=1)
 
 model.predict(next(train_generator)[0])
